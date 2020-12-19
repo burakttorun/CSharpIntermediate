@@ -11,7 +11,7 @@ namespace RecapDemo
         static void Main(string[] args)
         {
             CustomManager customManager = new CustomManager();
-            customManager.logger = new DatabaseLogger();
+            customManager.logger = new DatabaseLogger(); // Müşterinin ihtiyacına göre logger nesnesi oluşturuldu.
             customManager.Add();           
             Console.ReadLine();
         }
@@ -20,7 +20,8 @@ namespace RecapDemo
 
     class CustomManager
     {
-        public ILogger logger { get; set; } 
+        public ILogger logger { get; set; } /*Her yeni eklenen log sistemi için kod değişikliği yapmamak için CustomManager e bir "ILogger
+        tipinde prop eklendi.*/
         
         public void Add()
         {
