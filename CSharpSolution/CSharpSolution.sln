@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors", "Constructor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{56278DEC-30AC-4B01-A20C-EA66E9B69240}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{3B7FAA17-F95C-4EF0-B1CF-139C620FF5DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{56278DEC-30AC-4B01-A20C-EA66E9B69240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56278DEC-30AC-4B01-A20C-EA66E9B69240}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56278DEC-30AC-4B01-A20C-EA66E9B69240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7FAA17-F95C-4EF0-B1CF-139C620FF5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7FAA17-F95C-4EF0-B1CF-139C620FF5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7FAA17-F95C-4EF0-B1CF-139C620FF5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7FAA17-F95C-4EF0-B1CF-139C620FF5DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
