@@ -28,6 +28,17 @@ namespace EntityFrameworkDemo
             dgwProducts.DataSource = _productDal.GetAll();
         }
 
+        private void SearchProducts(string key)
+        {
+            /*Bütün ürünlerin içerisinde veritabanı sorgusu yapmadan koleksiyonlar üzerinden arama işleminin yapılması.
+              Daha yavaş bir kullanım şekli olup büyük-küçük harf duyarlılığı vardır dolayısıyla işlemlere başlamadan önce "ToLover()"
+              metodu kullanılır.*/
+            // var result = _productDal.GetAll().Where(p => p.Name.ToLower().Contains(key.ToLower())).ToList();
+
+            var result = _productDal.GetByName(key);
+            dgwProducts.DataSource = result;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             _productDal.Add(new Product
@@ -38,7 +49,7 @@ namespace EntityFrameworkDemo
             });
             LoadProducts();
             MessageBox.Show("Added!");
-            
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -69,6 +80,21 @@ namespace EntityFrameworkDemo
             });
             LoadProducts();
             MessageBox.Show("Deleted!");
+        }
+
+        private void dgwProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        {
+            SearchProducts(tbxSearch.Text);
+        }
+
+        private void btnGetById_Click(object sender, EventArgs e)
+        {
+            _productDal.GetById(1);
         }
     }
 }
