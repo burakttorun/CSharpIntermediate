@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetDemo", "AdoNetDemo\Ad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{08DE9989-040B-4A52-93AD-C714B23A4313}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{6FF4112E-2F87-4506-9A48-082AB205F9CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{08DE9989-040B-4A52-93AD-C714B23A4313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08DE9989-040B-4A52-93AD-C714B23A4313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08DE9989-040B-4A52-93AD-C714B23A4313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF4112E-2F87-4506-9A48-082AB205F9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF4112E-2F87-4506-9A48-082AB205F9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF4112E-2F87-4506-9A48-082AB205F9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF4112E-2F87-4506-9A48-082AB205F9CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
