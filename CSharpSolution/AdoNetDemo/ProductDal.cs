@@ -55,7 +55,7 @@ namespace AdoNetDemo
             SqlCommand command = new SqlCommand("Select * from Products", _connection);//-->string içinde yer alan kod ile bağlantı yap anlamına gelir.
             SqlDataReader reader = command.ExecuteReader();//"ExecuteReader" metodu commend i çalıştırır ve geriye SqlDataReader döndürür.
             DataTable dataTable = new DataTable();
-            dataTable.Load(reader);//IdataReader tipinde bir parametre alır ve onu yükler.
+            dataTable.Load(reader);//IDataReader tipinde bir parametre alır ve onu yükler.
             reader.Close(); //readerin kapanması
             _connection.Close();//bağlantının kapanması
             return dataTable;

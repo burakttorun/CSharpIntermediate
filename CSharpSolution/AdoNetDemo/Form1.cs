@@ -51,7 +51,7 @@ namespace AdoNetDemo
             tbxStockAmountUpdate.Text = dgwProducts.CurrentRow.Cells[3].Value.ToString();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e) //update butonuna basıldığında çalışsacak kod bloğu.
+        private void btnUpdate_Click(object sender, EventArgs e) //update butonuna basıldığında çalışacak kod bloğu.
         {
             Product product = new Product
             {
